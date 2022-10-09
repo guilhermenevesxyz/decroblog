@@ -1,0 +1,96 @@
+/* Noto Sans */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap');
+
+/* EB Garamond */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$colour-bg-1: #FFFFFF;
+$colour-fg-1: #000000;
+$colour-fg-2: #666666;
+
+$font-1: "Noto Sans";
+$font-2: "EB Garamond";
+
+body {
+	font-family: $font-2;
+	background-color: $colour-bg-1;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: $colour-bg-1;
+	text-align: center;
+	padding: 0.25rem;
+	margin: auto;
+	border-bottom: 0.15rem solid $colour-fg-2;
+	position: sticky;
+	top: 0;
+	
+	& > * {
+		display: inline-block;
+		margin: 0.25rem 1.5rem;
+		vertical-align: middle;
+	}
+	
+	& > input {
+		font-family: $font-1;
+		font-weight: normal;
+		font-size: 1rem;
+		background: none;
+		color: $colour-fg-1;
+		border-radius: 2rem;
+		border: none;
+		outline: solid;
+		padding: 0.5rem;
+		
+		&::placeholder {
+			color: $colour-fg-2;
+		}
+	}
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 3.5rem;
+	font-family: $font-1;
+	font-weight: 900;
+}
+
+h3 {
+	font-size: 2rem;
+	font-family: $font-2;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: $colour-fg-1;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+#article-list {
+	& > li {
+		padding: 0.25rem;
+		font-size: 1.5rem;
+		font-family: $font-1;
+		font-weight: bold;
+	}
+}
+
+article {
+	max-width: 50rem;
+	margin: auto;
+	padding: 1rem;
+}
+
